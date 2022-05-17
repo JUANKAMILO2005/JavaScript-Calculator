@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td colspan="4" align="center"> <input type="display" name="title" id="display"></td>
+        </tr>
+        <tr>
+            <td><input class="numero"type="button" name="AC" value="AC" onclick="borrar()"></td>
+            <td><input class="numero"type="button" name="(" value="(" onclick="mostrar('(')"></td>
+            <td><input class="numero"type="button" name=")" value=")" onclick="mostrar(')')"></td>
+            <td><input class="numero"type="button" name="/" value="/" onclick="mostrar('/')"></td>
+        </tr>
+        <tr>
+            <td><input class="numero"type="button" name="siete" value="7" onclick="mostrar(7)"></td>
+            <td><input class="numero"type="button" name="ocho" value="8" onclick="mostrar(8)"></td>
+            <td><input class="numero"type="button" name="nueve" value="9" onclick="mostrar(9)"></td>
+            <td><input class="numero"type="button" name="por" value="*" onclick="mostrar('*')"></td>
+        </tr>
+        <tr>
+            <td><input class="numero"type="button" name="cuatro" value="4" onclick="mostrar(4)"></td>
+            <td><input class="numero"type="button" name="cinco" value="5" onclick="mostrar(5)"></td>
+            <td><input class="numero"type="button" name="seis" value="6" onclick="mostrar(6)"></td>
+            <td><input class="numero"type="button" name="menos" value="-" onclick="mostrar('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="numero"type="button" name="uno" value="1" onclick="mostrar(1)"></td>
+            <td><input class="numero"type="button" name="dos" value="2" onclick="mostrar(2)"></td>
+            <td><input class="numero"type="button" name="tres" value="3" onclick="mostrar(3)"></td>
+            <td><input class="numero"type="button" name="mas" value="+" onclick="mostrar('+')"  ></td>
+        </tr>
+        <tr>
+            <td><input class="numero"type="button" name="cero" value="0" onclick="mostrar(0)"></td>
+            <td><input class="numero"type="button" name="%" value="%" onclick="mostrar('%')"></td>
+            <td><input class="numero"type="button" name="pi" value="π" onclick="pi()"></td>
+            <td><input class="numero"type="button" name="igual" value="=" onclick="igual()"></td>
+        </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.5.3/math.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
